@@ -8,7 +8,9 @@
   <link rel="icon" href={favicon} />
 </svelte:head>
 <Header />
-{@render children()}
+<main class="centered">
+  {@render children()}
+</main>
 
 <style>
   :global body {
@@ -17,5 +19,10 @@
     background-size: cover;
     background-attachment: fixed;
     color: #ffffff;
+  }
+  .centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 </style>
