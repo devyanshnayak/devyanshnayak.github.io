@@ -29,6 +29,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 80vh;
     align-items: center;
   }
   .daddy p {

@@ -1,28 +1,36 @@
 <script>
   import favicon from "$lib/assets/favicon.svg";
   import Header from "$lib/Header.svelte";
+  import { page } from "$app/state";
+  import { fade } from "svelte/transition";
   let { children } = $props();
+  import BlogLink from "$lib/blog-link.svelte";
 </script>
 
 <svelte:head>
   <link rel="icon" href={favicon} />
 </svelte:head>
 <Header />
-<main class="centered">
-  {@render children()}
-</main>
+<BlogLink />
+{#key page.url.pathname}
+  <div in:fade={{ duration: 80, delay: 120 }} out:fade={{ duration: 120 }}>
+    {@render children()}
+  </div>
+{/key}
 
 <style>
-  :global body {
-    /* background-image: url('/background.png'); */
-    background-color: #1f2329;
-    background-size: cover;
-    background-attachment: fixed;
-    color: #ffffff;
+  :global(html, body) {
+    height: 100%;
+    margin: 0;
   }
-  .centered {
+
+  :global(body) {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    background-color: #1f2329;
+    color: #fff;
+  }
+  :global(a) {
+    color: #fff;
   }
 </style>

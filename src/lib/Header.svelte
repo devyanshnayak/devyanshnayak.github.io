@@ -1,64 +1,74 @@
 <script>
+  import { page } from "$app/stores";
+  import { goto } from "$app/navigation";
 </script>
 
 <nav>
-  <ul>
-    <li>
-      <a href="/">
-        <img src="./home.svg" alt="home" />
-      </a>
+  <div>
+    <button
+      class="button"
+      class:active={$page.url.pathname === "/"}
+      on:click={() => goto("/")}
+    >
+      <img src="./home-light.svg" alt="home" />
       <p>home</p>
-    </li>
-    <li>
-      <a href="/about"><img src="./about.svg" alt="about" /> </a>
+    </button>
+    <button
+      class="button"
+      class:active={$page.url.pathname === "/"}
+      on:click={() => goto("/about")}
+    >
+      <img src="./about-light.svg" alt="about" />
       <p>about</p>
-    </li>
-    <li>
-      <a href="/projects"><img src="./projects.svg" alt="projects" /> </a>
+    </button>
+    <button
+      class="button"
+      class:active={$page.url.pathname === "/"}
+      on:click={() => goto("/projects")}
+    >
+      <img src="./projects-light.svg" alt="projects" />
       <p>projects</p>
-    </li>
-    <li>
-      <a href="/contact-me"><img src="./contact.svg" alt="contact" /></a>
+    </button>
+    <button
+      class="button"
+      class:active={$page.url.pathname === "/"}
+      on:click={() => goto("contact-me")}
+    >
+      <img src="./contact-light.svg" alt="contact" />
       <p>contacts</p>
-    </li>
-  </ul>
+    </button>
+  </div>
+  <div class="theam"></div>
 </nav>
 
 <style>
-  ul {
-    list-style: none;
-    display: flex;
-    gap: 14px;
-    padding: 7px;
-    height: 68px;
-    margin: 2px;
+  .button {
+    background-color: #6c6c6c4f;
+    border-style: none;
+    height: 75px;
+    border-radius: 30%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .button img {
+    width: 100%;
+    height: 60%;
+  }
+  .button p {
+    margin: 0;
+    color: #ffffff;
+  }
+  .button:hover {
+    background-color: #6c6c6c9c;
   }
 
-  li {
-    background-color: #00000077;
-    backdrop-filter: blur(5px);
-    border-radius: 20px;
-    margin: 0px;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 1;
-  }
-  li p {
-    padding: 0;
-    margin: 0px;
-    font-size: 15px;
-  }
-
-  li img {
-    max-height: 30px;
-  }
   nav {
     border-radius: 50px;
     margin: 0;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+
     display: flex;
   }
 </style>
