@@ -1,5 +1,5 @@
 <script>
-  import favicon from "$lib/assets/favicon.svg";
+  import favicon from "$lib/assets/favicon.png";
   import Header from "$lib/Header.svelte";
   import { page } from "$app/state";
   import { fade } from "svelte/transition";
