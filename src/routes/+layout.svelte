@@ -56,6 +56,7 @@
   :global(html, body) {
     height: 100%;
     margin: 0;
+    overflow-y: hidden;
   }
 
   :global(body) {

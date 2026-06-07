@@ -6,8 +6,8 @@
 <SEO
   title="devyansh - linux Nerd & homelab Enthusiast"
   description="Kubernaties, linux and infrastructure projects."
-  url="https://devyyansh.site"
-  image="https://www.devyansh.site/og-image.png"
+  url="https://devyansh.site"
+  image="https://devyansh.site/og-image.png"
 />
 <div class="daddy">
   <h1 class="hello">
@@ -36,10 +36,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
+    max-width: 100%;
     height: 80vh;
     align-items: center;
   }
   .daddy p {
     font-size: 19px;
+    max-width: 700px;
+
+    width: 90%;
+    margin-inline: auto;
+    text-align: center;
   }
 </style>
