@@ -8,8 +8,42 @@
 </script>
 
 <svelte:head>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Devyansh",
+      "url": "https://devyansh.site",
+      "jobTitle": "IT Student",
+      "knowsAbout": [
+        "Linux",
+        "Kubernetes",
+        "DevOps",
+        "Self Hosting",
+        "Infrastructure Automation",
+        "docker"
+      ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Devyansh.site",
+      "url": "https://devyansh.site"
+    }
+  </script>
   <link rel="icon" href={favicon} />
+  <title>Devyansh's portfolio</title>
+  <meta
+    name="description"
+    content="Portfolio of Devynash. Linux enthusiast, homelab builder, kubernaties and infrastructure automation projects"
+  />
+  <meta property="og:site_name" content="Devi Portfolio" />
+
+  <meta property="og:type" content="website" />
 </svelte:head>
+
 <Header />
 <BlogLink />
 {#key page.url.pathname}

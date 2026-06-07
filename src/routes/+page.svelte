@@ -1,7 +1,14 @@
 <script>
   import { DotLottieSvelte } from "@lottiefiles/dotlottie-svelte";
+  import SEO from "$lib/components/SEO.svelte";
 </script>
 
+<SEO
+  title="devyansh - linux Nerd & homelab Enthusiast"
+  description="Kubernaties, linux and infrastructure projects."
+  url="https://devyyansh.site"
+  image="https://www.devyansh.site/og-image.png"
+/>
 <div class="daddy">
   <h1 class="hello">
     Hello!

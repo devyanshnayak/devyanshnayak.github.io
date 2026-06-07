@@ -1,7 +1,12 @@
 <script>
-  import { displayPartsToString } from "typescript";
+  import SEO from "$lib/components/SEO.svelte";
 </script>
 
+<SEO
+  title="About devyansh"
+  description="Learn about my intrests, Devops and Homelab journy"
+  url="https://devyansh.site/about"
+/>
 <div class="aboutp">
   <div class="about">
     <h1>About Me</h1>
