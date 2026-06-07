@@ -13,6 +13,6 @@ sitemap.end();
 
 const xml = await streamToPromise(sitemap);
 
-writeFileSync("./build/sitemap.xml", xml.toString());
+writeFileSync("./static/sitemap.xml", xml.toString());
 
 console.log("Sitemap generated");
