@@ -1,4 +1,4 @@
-<a href="/blog">
+<a href="https://blog.devyansh.site">
   <div class="fab">
     <span class="label">My Blog <br /> Post</span>
     <img src="./blog.svg" alt="blog" class="icon" />
