@@ -23,14 +23,6 @@
         devyanshnayak</a
       >
     </p>
-    <p>
-      Instagram: &nbsp; <a
-        href="https://www.instagram.com/devyansh_vishwakarma/"
-        target="_blank"
-      >
-        ig:devyansh_vishwakarma</a
-      >
-    </p>
   </div>
 </div>
 
