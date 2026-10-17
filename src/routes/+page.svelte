@@ -18,8 +18,8 @@
   </h1>
   <p>It's Devyansh, i'm A Open Source and Linux Enthusiast</p>
   <p>
-    Wellcome to My website and a small space <br /> Fell free to browse this site
-    doesnt track you
+    Welcome to My website and a small space <br /> Feel free to browse this site
+    doesn't track you
   </p>
 </div>
 
