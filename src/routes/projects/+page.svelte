@@ -8,7 +8,7 @@
   url="https://devyansh.site/projects"
 />
 
-<div><h1>Page is under Construction <br /> it will be updated soon</h1></div>
+<div><h1>Page is under Construction <br /> it will be updated soon i am going to update it</h1></div>
 
 <style>
   div {
