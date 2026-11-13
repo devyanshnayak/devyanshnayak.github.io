@@ -47,16 +47,16 @@
 <Header />
 <BlogLink />
 {#key page.url.pathname}
-  <div in:fade={{ duration: 80, delay: 120 }} out:fade={{ duration: 120 }}>
+  <div in:fade={{ duration: 80, delay: 120 }} out:fade={{ duration: 125 }}>
     {@render children()}
   </div>
 {/key}
 
 <style>
   :global(html, body) {
-    height: 100%;
+    /* height: 100%; */
     margin: 0;
-    overflow-y: hidden;
+   /* overflow-y: hidden; */
   }
 
   :global(body) {

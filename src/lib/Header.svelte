@@ -65,7 +65,7 @@
 
   nav {
     border-radius: 50px;
-    margin: 0;
+    margin: auto 0 0 0;
     justify-content: center;
     align-items: center;
 

@@ -1,0 +1,11 @@
+[
+
+{
+"id": 1,
+"title": "Lunari: A Little Corner of the Moonlit Web",
+"description": "Lunari is a lightweight, static-first blogging framework built with Astro and centered around Markdown. Engineered for blazing speed, effortless SEO tags, privacy-first anonymous commenting, and peaceful writing.",
+"url": "https://lunari.devyansh.site",
+"gitlink": "https://github.com/devyanshnayak/lunari",
+"thumpath": "/assets/Lunari-thumbnail.jpg"
+}
+]
